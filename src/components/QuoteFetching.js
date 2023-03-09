@@ -10,21 +10,23 @@ const QuoteFetching = () => {
         axios.get('https://api.quotable.io/quotes')
         .then(response => {
             setQuotes(response.data)
-            
         })
         .catch(error => {console.log(error)})
     }, [])
 
     const randomId = () => {
         setId(() => {return Math.floor(Math.random() * 20)})
-        setDisplay(quotes.map(q => q.results[id].content))
         console.log(id)
     }
-    console.log(quotes.results); console.log(id)
-    console.log(quotes.results[id].content)
     return (
-        <div>
-            
+        <div className="container">
+            <button type="button" onClick={randomId}>random</button>
+            <div className="quote-container">
+                {quotes.results[id].content}
+            </div>
+            <div className="author-container">
+                {quotes.results[id].author}
+            </div>
         </div>
     )
 }
