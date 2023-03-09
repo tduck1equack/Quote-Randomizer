@@ -11,11 +11,42 @@
 }
 .quote-container {
     border-left: solid 5px;
-    border-left-color: yellow;
+    border-left-color: #fede94;
     margin-top: 180px;
-    margin-right: 360px;
+    margin-right: 400px;
     margin-left: 360px;
     margin-bottom: 40px;
     padding-left: 120px;
     font-size: 24px;
+}
+.display-button {
+    display: flex;
+    border: none;
+    margin-top: 40px;
+    margin-right: 500px;
+    margin-left: 460px;
+    margin-bottom: 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: white;
+}
+
+.display-button:hover {
+    background-color: #333333;
+    cursor: pointer;
+    color: #e7e7e7;
+}
+.author-container {
+    width: 240px;
+}
+.author {
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.tags {
+    width: 240px;
+    padding-top: 8px;
+    padding-right: 20px;
 }
