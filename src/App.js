@@ -1,13 +1,10 @@
-import {useState, useEffect} from 'react';
 import './App.css';
 import QuoteFetching from './components/QuoteFetching';
 
-
 const App = () => {
-	
 	return (
 		<div>
-            <QuoteFetching/>
+            <QuoteFetching />
 		</div>
 	)
 }
